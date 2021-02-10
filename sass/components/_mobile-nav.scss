@@ -1,0 +1,27 @@
+.navigation-mobile {
+    background-color: $bg-primary;
+    display: none;
+
+    @include responsive(phone){
+        display: block;
+        height: 0;
+    }
+
+    &__list {
+        list-style: none;
+        text-align: center;
+
+        &--item {
+            padding: 2rem;
+            border-bottom: .2px solid black;
+            font-weight: bold;
+        
+            &-link {
+                color: $color-primary;
+                text-decoration: none;
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

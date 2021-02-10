@@ -1,0 +1,28 @@
+//factory 
+.factory {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    @include responsive(phone){
+        grid-template-columns: repeat(1, 100%);
+        grid-row-gap: 2rem;
+    }
+
+    img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 2.5rem;
+        cursor: pointer;
+
+        @include responsive(phone){
+            &:first-of-type {
+                grid-column: 1 / 1;
+            }
+        }
+
+        &:first-of-type {
+            grid-column: 1 / -1;
+        }
+    }
+}

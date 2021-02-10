@@ -1,0 +1,25 @@
+// for hero image
+.hero-bg {
+    background-image: url("../../images/hero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.hero-about {
+    position: absolute;
+    top: 44%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 45%;
+
+    @include responsive(phone) {
+        display: none;
+    }
+
+    &__content {
+        font-size: 1.4rem;
+        margin-bottom: 2.2rem;
+    }
+}

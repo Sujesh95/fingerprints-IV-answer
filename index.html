@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/materialize.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>Fingerprint UI Assignment</title>
+</head>
+
+<body>
+    <div class="body-wrapper">
+
+        <!-- for modal -->
+        <div class="custom-backdrop"></div>
+        <div class="custom-modal" id="modal">
+            <div id="close">&times;</div>
+            <img src="images/factory-1.jpg" alt="Factory image">
+        </div>
+
+        <header class="header">
+            <div class="contact u-overall-padding">
+                <div class="contact__phone">
+                    <img src="images/phone.svg" alt="Phone">
+                    <pre>1800 102 6246</pre>
+                </div>
+                <div class="contact__mail">
+                    <img src="images/mail.svg" alt="Phone">
+                    <pre>info@tsugami.com</pre>
+                </div>
+            </div>
+
+            <div class="header__main u-overall-padding">
+                <img class="logo " src="images/logo.svg" alt="Logo">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__list--item">
+                            <a href="#" class="nav__list--item-link"> CNC Lathe</a>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="#" class="nav__list--item-link"> CNC Sliding Head Stock</a>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="#" class="nav__list--item-link"> CNC Turing Center</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="btn">
+                    <button class="btn-filled">Enquire Now</button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <div class="hamburger__bar"></div>
+                    <div class="hamburger__bar"></div>
+                    <div class="hamburger__bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="navigation-mobile" id="navigation-mobile">
+            <ul class="navigation-mobile__list">
+                <li class="navigation-mobile__list--item">
+                    <a href="#" class="navigation-mobile__list--item-link">CNC Lathe</a>
+                </li>
+                <li class="navigation-mobile__list--item">
+                    <a href="#" class="navigation-mobile__list--item-link">CNC Sliding Head Stock </a>
+                </li>
+                <li class="navigation-mobile__list--item">
+                    <a href="#" class="navigation-mobile__list--item-link">CNC Turing Center</a>
+                </li>
+            </ul>
+        </div>
+
+        <main>
+            <section class="section-hero">
+                <div class="hero-bg"></div>
+                <div class="hero-about">
+                    <h1 class="heading-main">Superior Precision Machine Tools</h1>
+                    <p class="hero-about__content">We provide high-precision, high-speed and high-rigidity products in
+                        line
+                        with customers' needs</p>
+                    <button class="btn-outline">Enquire Now</button>
+                </div>
+            </section>
+
+            <section class="section-enquire-mobile">
+                <div class="mobile-contact__phone">
+                    <img src="images/phone-white.svg" alt="Phone">
+                    <span>Call Now</span>
+                </div>
+                <div class="mobile-contact__mail">
+                    <img src="images/mail.svg" alt="Phone">
+                    <span>Enquire Now</span>
+                </div>
+            </section>
+
+            <section class="section-about">
+                <div class="about u-overall-padding">
+                    <h2 class="about__heading heading-main">Accuracy, Speed & Rigidity</h2>
+                    <div class="about__content">
+                        <p>In the face of rapidly changing technology, we recognize the need to continuously improve
+                            overall
+                            performance. That is why we are focusing all of our efforts on research and development.</p>
+                        <p>Looking ahead, we take on board direct feedback from customers and anticipate their needs, so
+                            that we can maintain our focus on product development, with an emphasis on automatic lathes,
+                            grinding machines, machining centers and other high-precision machinery. We continue
+                            providing
+                            products that guarantee customer satisfaction.</p>
+                    </div>
+                </div>
+
+
+                <div class="dot-container u-overall-padding" id="dot-container">
+                    <div class="dot-group">
+                        <div class="dot-flex">
+                            <span class="dot-text">1923</span>
+                            <span class="dot" id="1"></span>
+                        </div>
+                        <div class="dot-flex">
+                            <span class="dot-text">1933</span>
+                            <span class="dot" id="2"></span>
+                        </div>
+                        <div class="dot-flex">
+                            <span class="dot-text">1943</span>
+                            <span class="dot" id="3"></span>
+                        </div>
+                        <div class="dot-flex">
+                            <span class="dot-text">1953</span>
+                            <span class="dot" id="4"></span>
+                        </div>
+                    </div>
+
+                     <div class="dot-group">
+                        <div class="dot-flex">
+                            <span class="dot-text">1963</span>
+                            <span class="dot" id="5"></span>
+                        </div>
+                        <div class="dot-flex">
+                            <span class="dot-text">1973</span>
+                            <span class="dot" id="6"></span>
+                        </div>
+                        <div class="dot-flex">
+                            <span class="dot-text">2003</span>
+                            <span class="dot" id="7"></span>
+                        </div>
+                        <div class="dot-flex">
+                            <span class="dot-text">2013</span>
+                            <span class="dot" id="8"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slideshow-container u-overall-padding" id="slide-container">
+                    <a class="previous" id="previous">❮</a>
+                    <a class="next" id="next">❯</a>
+
+                    <div class="bar u-overall-padding"></div>
+                </div>
+            </section>
+
+            <section class="section-products">
+                <h3 class="heading-sub">Our Products</h3>
+                <div class="products u-overall-padding">
+                    <img src="images/machine-1.jpg" alt="Machine 1">
+                    <div class="products__content">
+                        <span>CNC Lathe</span>
+                        <h3>High Productivity and Compact Machine</h3>
+                        <p>Heavy duty machine in a small footprint to improve production by increase cutting parameters
+                            and
+                            reducing non cutting time .</p>
+                        <button class="btn-filled">View Product</button>
+                    </div>
+                    <div class="products__content">
+                        <span>CNC Sliding Head Stock</span>
+                        <h3>Automatic Machine for Bar Components</h3>
+                        <p>High speed machine for complete machining of bar type components in a single setup .</p>
+                        <button class="btn-filled">View Product</button>
+                    </div>
+                    <img src="images/machine-2.jpg" alt="Machine 2">
+                    <img src="images/machine-3.svg" alt="Machine 3">
+                    <div class="products__content">
+                        <span>CNC Turn Mill Centre</span>
+                        <h3>Complex machining in a single setup to complete both turning and milling operations</h3>
+                        <p>Compact 2 axis CNC lathe will deliver full load of 9 kw to 11 kw Spindle power, Realizes
+                            heavy
+                            duty cutting by rigid basic structure of single casting bed with 3.3 ton, Rapid indexing
+                            with
+                            servo hydraulic turret for heavy metal removal.</p>
+                        <button class="btn-filled">View Product</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-factory">
+                <h3 class="heading-sub factory-heading">Factory Photos</h3>
+                <div class="factory u-overall-padding">
+                    <img src="images/factory-1.jpg" data-modal alt="Factory 1">
+                    <img src="images/factory-2.jpg" data-modal alt="Factory 2">
+                    <img src="images/factory-3.jpg" data-modal alt="Factory 3">
+                    <img src="images/factory-4.jpg" data-modal alt="Factory 4">
+                    <img src="images/factory-5.jpg" data-modal alt="Factory 5">
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__main u-overall-padding">
+                <div class="footer__main--contact">
+                    <h3> Contact us for additional information about solutions we can deliver for you</h3>
+                    <p>Tsugami Precision Engineering India Pvt.Ltd</p>
+                    <p> Plot No. A-8, Sipcot Industrial Growth Center, Oragadam, Vallam B Village, Sriperumbudhur Taluk,
+                        Kancheepuram, 602 105, India, </p>
+                    <div class="footer__main--contact-phone">
+                        <img src="images/phone.svg" alt="Phone">
+                        <span>044 - 67176717</span>
+                    </div>
+                    <div class="footer__main--contact-mail">
+                        <img src="images/mail.svg" alt="mail">
+                        <span>hello@tsugami.in</span>
+                    </div>
+                </div>
+                <form action="#" class="footer__main--form">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="Phone no" type="tel" class="validate">
+                            <label for="Phone no">Phone No</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="1">Product 1</option>
+                                <option value="2">Product 2</option>
+                                <option value="3">Product 3</option>
+                            </select>
+                            <label> Product Interested In </label>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <button type="submit" class="btn-filled btn-submit"> Submit </button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer__sub u-overall-padding">
+                Copyrights © 2014- 2015, Tsugami Corporation All rights reserved
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="slide">
+                        <h3>Block Gauge Research -1923</h3>
+                        <p>Research of block gauge was initiated at Honjo Ohira-cho in Tokyos</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Block Gauge Research -1947</h3>
+                        <p>Research of block gauge was initiated at Honjo Ohira-cho in Tokyos</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Block Gauge Research -1957</h3>
+                        <p>Research of block gauge was initiated at Honjo Ohira-cho in Tokyos</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Block Gauge Research -1997</h3>
+                        <p>Research of block gauge was initiated at Honjo Ohira-cho in Tokyos</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Block Gauge Research -2007</h3>
+                        <p>Research of block gauge was initiated at Honjo Ohira-cho in Tokyos</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Block Gauge Research -2017</h3>
+                        <p>Research of block gauge was initiated at Honjo Ohira-cho in Tokyos</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Block Gauge Research -2018</h3>
+                        <p>Research of block gauge was initiated at Honjo Ohira-cho in Tokyos</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Block Gauge Research -2019</h3>
+                        <p>Research of block gauge was initiated at Honjo Ohira-cho in Tokyos</p>
+                    </div> -->

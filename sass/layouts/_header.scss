@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+
+
+    .contact {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #ccc;
+
+        @include responsive(phone) {
+            display: none;
+        }
+
+        &__phone {
+            margin-right: 2rem;
+            pre {
+                display: inline-block;
+            }
+        }
+
+        &__mail {
+            pre {
+                display: inline-block;
+            }
+
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ccc;
+
+        @include responsive(phone) {
+            justify-content: space-between;
+        }
+
+        .logo {
+            flex: 0 0 10%;
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+}
+
+.btn {
+    flex: 0 0 15%;
+    text-align: right;
+    background-color: white;
+    box-shadow: none;
+
+    @include responsive(tab-port) {
+        flex: 0 0 26%;
+    }
+
+    @include responsive(tab-land) {
+        flex: 0 0 26%;
+    }
+
+    @include responsive(phone) {
+        display: none;
+    }
+
+    &:hover {
+        background-color: white;
+        box-shadow: none;
+    }
+}

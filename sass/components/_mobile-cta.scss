@@ -1,0 +1,38 @@
+.mobile-contact {
+    @include responsive(phone) {
+        display: none;
+    }
+
+    &__phone {
+        flex: 1;
+        padding: 2rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        background-color: $color-primary;
+        cursor: pointer;
+
+        span {
+            margin-left: .5rem;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+    }
+
+    &__mail {
+        flex: 1;
+        padding: 2rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $color-primary;
+        background-color: white;
+        cursor: pointer;
+
+        span {
+            margin-left: .5rem;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+
+    }
+}

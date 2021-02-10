@@ -1,0 +1,23 @@
+.u-overall-padding {
+    padding-right: 10rem;
+    padding-left: 10rem;
+
+    @include responsive(phone) {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    @include responsive(tab-port) {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    @include responsive(tab-land) {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+.u-toggle-display {
+    height: auto !important;
+ }

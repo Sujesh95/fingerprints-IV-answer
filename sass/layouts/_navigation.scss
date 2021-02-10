@@ -1,0 +1,46 @@
+.nav {
+    flex: 1;
+    background-color: white;
+    box-shadow: none;
+
+    @include responsive(phone) {
+        display: none;
+    }
+
+    &__list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+        &--item {
+            margin-right: 3.5rem;
+
+            @include responsive(tab-port) {
+                margin-right: 0;
+            }
+        
+            @include responsive(tab-land) {
+                margin-right: 0;
+            }
+
+            &-link {
+                &:link,
+                &:visited {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+                    transition: all .2s;
+                    font-size: 1.2rem;
+                }
+
+                &:hover,
+                &:active {
+                    color: $color-primary;
+                }
+
+
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.section-hero {
+    position: relative;
+}
+
+.section-about {
+    min-height: 75vh;
+}
+
+
+.about {
+    display: flex;
+    
+    @include responsive(phone) {
+        flex-direction: column;
+    }
+
+
+    &__heading {
+        flex: 0 0 22%;
+        padding: 4rem 8rem;
+        padding-left: 8rem;
+
+        @include responsive(tab-port) {
+            padding: 4rem;
+        }
+    
+        @include responsive(tab-land) {
+            padding: 4rem;
+        }
+
+        @include responsive(phone) {
+            padding: 0 0;
+            padding-left: 0;
+        }
+    }
+
+    &__content {
+        font-size: 1.5rem;
+        padding: 6rem 8rem;
+
+        
+        @include responsive(tab-port) {
+            padding: 4rem;
+        }
+    
+        @include responsive(tab-land) {
+            padding: 4rem;
+        }
+
+        @include responsive(phone) {
+            padding: 0;
+        }
+
+        p:first-of-type {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.section-products {
+    background-color: $bg-primary;
+}
+
+.section-factory {
+    position: relative;
+    z-index: 1;
+    transform: translateY(6%);
+    
+    .factory-heading {
+        padding-top: 0;
+        padding-bottom: 5rem;
+    }
+}
+
+.section-enquire-mobile {
+    display: none;
+    z-index:4;
+
+    @include responsive(phone){
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
